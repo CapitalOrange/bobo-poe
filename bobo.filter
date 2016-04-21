@@ -1,0 +1,264 @@
+﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# Created By: CapitalOrange/Bobo
+# created on: 04/18/2016
+
+# Section: Links/Sockets
+
+# 6 link whites
+Show #Gear - Links - 6L
+    Rarity = Normal
+    LinkedSockets = 6
+    SetTextColor 0 0 0 #6L Normal Text
+    SetBackgroundColor 200 200 200 #6L Normal BG
+    SetBorderColor 0 0 0 #6L Normal Border
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+# 6 link blues
+Show #Gear - Links - 6L
+    Rarity = Magic
+    LinkedSockets = 6
+    SetTextColor 0 0 0 #6L Magic Text
+    SetBackgroundColor 136 136 255 #6L Magic BG
+    SetBorderColor 0 0 0 #6L Magic Border
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+# 6 link rares
+Show #Gear - Links - 6L
+    Rarity = Rare
+    LinkedSockets = 6
+    SetTextColor 0 0 0 #6L Rare Text
+    SetBackgroundColor 255 255 119 #6L Rare Background
+    SetBorderColor 0 0 0 #6L Rare Border
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+#5 link whites
+Show #Gear - Links - 5L
+    Rarity = Normal
+    LinkedSockets = 5
+    SetTextColor 0 0 0 #5L White Text
+    SetBackgroundColor 200 200 200 #5L White BG
+    SetBorderColor 0 0 0 #5L White Border
+    SetFontSize 42
+    PlayAlertSound 1 100
+
+#5 link blues
+Show #Gear - Links - 5L
+    Rarity = Magic
+    LinkedSockets = 5
+    SetTextColor 0 0 0 #5L Magic Text
+    SetBackgroundColor 136 136 255 #5L Magic BG
+    SetBorderColor 0 0 0 #5L Magic Border
+    SetFontSize 42
+    PlayAlertSound 1 100
+
+#5 link rares
+Show #Gear - Links - 5L
+    Rarity = Rare
+    LinkedSockets = 5
+    SetTextColor 0 0 0 #5L Rare Text
+    SetBackgroundColor 255 255 119 #5L Rare BG
+    SetBorderColor 0 0 0 #5L Rare Border
+    SetFontSize 42
+    PlayAlertSound 1 100
+
+#6 socket items
+Show # Gear - 6S
+    Sockets = 6
+    SetBorderColor 200 200 200 #6S Border
+    PlayAlertSound 4 100
+
+# Section: Generally Good Shit
+
+# Show us all uniques
+Show #Gear - Uniques
+    Rarity = Unique
+    SetBorderColor 175 96 37 #Unique Border
+    SetFontSize 40
+    PlayAlertSound 6 100
+
+# jewels
+Show #Gear - Jewels 
+    Class "Jewel"
+    SetBorderColor 127 127 127 #Jewel Border
+    SetFontSize 37
+    PlayAlertSound 9 100
+
+#show all white maps
+Show #Maps - Normal
+    Rarity = Normal
+    Class "Maps" "Map Fragments"
+    SetTextColor 0 0 0 #Normal Map Text
+    SetBackgroundColor 200 200 200 #Normal Map BG
+    SetBorderColor 0 0 0 #Normal Map Border
+    PlayAlertSound 2 100
+
+#show all magic maps
+Show #Maps - Magic
+    Rarity = Magic
+    Class "Maps" "Map Fragments"
+    SetTextColor 0 0 0 #Magic Map Text
+    SetBackgroundColor 136 136 255 #Magic Map BG
+    SetBorderColor 0 0 0 #Magic Map Border
+    PlayAlertSound 2 100
+
+#show all rare maps
+Show #Maps - Rare
+    Rarity = Rare
+    Class "Maps" "Map Fragments"
+    SetTextColor 0 0 0 #Rare Map Text
+    SetBackgroundColor 255 255 119 #Rare Map BG
+    SetBorderColor 0 0 0 #Rare Map Border
+    PlayAlertSound 2 100
+
+# show all diviniation cards
+Show #Divination Cards
+    Class "Divination Card"
+    SetTextColor 0 0 0 #Div Card Text
+    SetBackgroundColor 30 144 255 #Div Card BG
+    SetBorderColor 30 144 255 #Div Card Border
+    SetFontSize 37
+    PlayAlertSound 7 100
+
+# Section: Currency
+
+# K R E Y G A S M
+Show #Currency - Rare
+    BaseType "Mirror of Kalandra"
+    SetTextColor 255 255 255 #Mirror Text
+    SetBackgroundColor 208 32 144 #Mirror BG
+    SetBorderColor 0 0 0 #Mirror Border
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+# sick currency and rod
+Show #Currency - Rare
+    BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Albino Rhoa Feather" "Fishing Rod"
+    SetTextColor 0 0 0 #Rare Currency Text
+    SetBackgroundColor 170 158 130 #Rare Currency BG
+    SetBorderColor 0 0 0 #Rare Currency Border
+    SetFontSize 45
+    PlayAlertSound 5 100
+
+Show #Currency - Coin
+    Class "Currency"
+    BaseType "Coin"
+    SetTextColor 255 200 0 #Perandus Coin Text
+    SetBorderColor 255 200 0 #Perandus Coin Border
+
+# nice currency
+Show #Currency - Uncommon
+    BaseType "Glassblower's Bauble" "Jeweller's Orb" "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret"
+    SetBorderColor 170 158 130 #Uncommon Currency Border
+    SetFontSize 38
+    PlayAlertSound 3 100
+
+# decent currency
+Show #Currency - Common
+    BaseType "Chromatic Orb" "Orb of Chance" "Orb of Alteration"
+    SetBorderColor 170 158 130 #Common Currency Border
+
+# show scrolls but small
+Show #Currency - Scrolls
+    BaseType "Scroll"
+    SetFontSize 28
+
+# Show remaining currency
+Show #Currency - Other
+    Class "Currency"
+    SetFontSize 32
+
+# Section: Quality Items/Recipes
+
+# show quality flasks for bauble recipe
+Show #Flasks - Quality
+    Quality >= 1
+    Class "Flasks"
+    SetBorderColor 255 255 255 #Quality Flask Border
+
+# show chisel hammers
+Show #Maps - Chisel Hammers
+    Rarity = Normal
+    BaseType "Gavel" "Stone Hammer" "Rock Breaker"
+    SetBorderColor 200 200 200 #Chisel Hammer Border
+
+# show and sound gem drops with guality
+Show #Gems - Quality
+    Quality > 1
+    Class "Gems"
+    SetTextColor 0 0 0 #Quality Gem Text
+    SetBackgroundColor 27 162 155 #Quality Gem BG
+    SetBorderColor 0 0 0 #Quality Gem Border
+    PlayAlertSound 3 100
+
+# Section: Rares
+
+# A blue colouration for regal recipe items
+Show #Gear - Recipe - Regal
+    ItemLevel >= 75
+    Rarity = Rare
+    SetBorderColor 30 144 255 #Regal Rare Border
+
+# A golden colouration for Chaos recipe items
+Show #Gear - Recipe - Chaos
+    ItemLevel >= 60
+    ItemLevel <= 74
+    Rarity = Rare
+    SetBorderColor 223 150 13 #Chaos Rare Border
+
+# Show all other rare items
+Show #Gear - Rares
+    Rarity >= Rare
+
+# Section: Leveling
+
+# Blues start fading away between 15-25
+Show #Gear - Levelling - Magic Items
+    ItemLevel >= 15
+    ItemLevel <= 25
+    Rarity = Magic
+    SetFontSize 25
+
+# Whites start fading away between 10-20
+Show #Gear - Levelling - White Items
+    ItemLevel >= 10
+    ItemLevel <= 20
+    Rarity = Normal
+    SetFontSize 25
+
+# Section: Other
+
+Show #Quest Items
+    Class "Quest Items"
+    SetTextColor 74 230 58 #Quest Item Text
+    SetBorderColor 74 230 58 #Quest Item Border
+    SetFontSize 37
+
+# Show gem drops - you can add conditions here to cut down on the gems shown
+Show #Gems - No Quality Gems
+    Class "Gems"
+
+# show us all flasks (non-quality)
+Show #Flasks - No Quality Flasks
+    Class "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks"
+    SetFontSize 30
+
+# make the RGB links stand out to quickly find items sellable for chrome
+Show #Gear - RGB
+    SocketGroup "RGB"
+    SetBorderColor 30 144 255 #RGB Border
+
+# Show everything else, but in a tiny font.
+Show #Junk
+    Rarity < Rare
+    SetBackgroundColor 0 0 0 0 #Junk BG
+    SetBorderColor 0 0 0 0 #Junk Border
+    SetFontSize 20
+
+Show #Error
+    SetTextColor 255 255 255 # Error Text
+    SetBackgroundColor 210 0 0 #Error BG
+    SetBorderColor 210 0 0 #Error Border
+
