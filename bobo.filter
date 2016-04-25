@@ -214,17 +214,15 @@ Show # Gear - Rares
 
 # Section: Leveling
 
-# Blues start fading away between 15-25
+# Blues start fading away at level 15
 Show # Gear - Levelling - Magic Items
-    ItemLevel >= 15
-    ItemLevel <= 25
+    ItemLevel <= 15
     Rarity = Magic
     SetFontSize 25
 
-# Whites start fading away between 10-20
+# Whites start fading away at level 10
 Show # Gear - Levelling - White Items
-    ItemLevel >= 10
-    ItemLevel <= 20
+    ItemLevel <= 10
     Rarity = Normal
     SetFontSize 25
 
