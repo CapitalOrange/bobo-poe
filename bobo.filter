@@ -81,6 +81,7 @@ Show # Gear - Uniques
 
 # jewels
 Show # Gear - Jewels
+    Rarity = Normal
     Class "Jewel"
     SetBorderColor 200 200 200 # Jewel Border
     SetFontSize 35
@@ -138,6 +139,14 @@ Show # Divination Cards
     SetFontSize 37
     PlayAlertSound 7 100
 
+# big money crafting bases
+Show
+    ItemLevel >= 83
+    Rarity <= Magic
+    Class "Amulets" "Rings"
+    BaseType "Imbued Wand" "Platinum Kris" "Imperial Skean" "Harbinger Bow" "Sorcerer Boots" "Sorcerer Gloves" "Arcanist Slippers" "Arcanist Gloves" "Hubris Circlet" "Vaal Regalia" "Vaal Axe" "Titanium Spirit Shield" "Jewelled Foil"
+    SetBorderColor 208 32 144
+
 # Section: Currency
 
 # K R E Y G A S M
@@ -158,6 +167,7 @@ Show # Currency - Rare
     SetFontSize 45
     PlayAlertSound 5 100
 
+# Prophecy dollars
 Show # Currency - Coin
     Class "Currency"
     BaseType "Silver Coin"
@@ -190,7 +200,7 @@ Show # Currency - Other
 
 # show quality flasks for bauble recipe
 Show # Flasks - Quality
-    Quality >= 1
+    Quality >= 5
     Class "Flasks"
     SetBorderColor 255 255 255 # Quality Flask Border
 
@@ -230,13 +240,11 @@ Show # Gear - Rares
 
 # Section: Leveling
 
-# Blues start fading away at level 15
 Show # Gear - Levelling - Magic Items
     ItemLevel <= 25
     Rarity = Magic
     SetFontSize 25
 
-# Whites start fading away at level 10
 Show # Gear - Levelling - White Items
     ItemLevel <= 15
     Rarity = Normal
@@ -244,6 +252,7 @@ Show # Gear - Levelling - White Items
 
 # Section: Other
 
+# labyrinth items
 Show
     BaseType "Treasure Key" "Golden Key" "Silver Key" "Bane of the Loyal" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity" "Heart of the Gargoyle" "Cube Of Absorption" "Cogs of Disruption"
     SetTextColor 74 230 58 # Quest Item Text
@@ -271,14 +280,21 @@ Show # Flasks - No Quality Flasks
 Show # Gear - RGB
     SocketGroup "RGB"
     SetBorderColor 30 144 255 # RGB Border
+    SetFontSize 30
 
 # Show everything else, but in a tiny font.
-Show # Junk
+Hide # Junk
     Rarity < Rare
     SetBackgroundColor 0 0 0 0 # Junk BG
     SetBorderColor 0 0 0 0 # Junk Border
     SetFontSize 20
 
+# chance bases, edit as needed
+Hide
+    Rarity = Normal
+    SetBorderColor 210 0 220
+
+# panicBasket
 Show # Error
     SetTextColor 255 255 255 # Error Text
     SetBackgroundColor 210 0 0 # Error BG
