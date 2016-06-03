@@ -82,8 +82,24 @@ Show # Gear - Uniques
 # jewels
 Show # Gear - Jewels
     Class "Jewel"
-    SetBorderColor 127 127 127 # Jewel Border
-    SetFontSize 37
+    SetBorderColor 200 200 200 # Jewel Border
+    SetFontSize 35
+    PlayAlertSound 9 100
+
+# jewels
+Show # Gear - Jewels
+    Rarity = Magic
+    Class "Jewel"
+    SetBorderColor 136 136 255 # Jewel Border
+    SetFontSize 35
+    PlayAlertSound 9 100
+
+# jewels
+Show # Gear - Jewels
+    Rarity = Rare
+    Class "Jewel"
+    SetBorderColor 255 255 119 # Jewel Border
+    SetFontSize 35
     PlayAlertSound 9 100
 
 # show all white maps
