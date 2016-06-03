@@ -160,9 +160,9 @@ Show # Currency - Rare
 
 Show # Currency - Coin
     Class "Currency"
-    BaseType "Coin"
-    SetTextColor 255 200 0 # Perandus Coin Text
-    SetBorderColor 255 200 0 # Perandus Coin Border
+    BaseType "Silver Coin"
+    SetBorderColor 138 43 226 # Prophecy Coin Border
+    SetFontSize 38
 
 # nice currency
 Show # Currency - Uncommon
