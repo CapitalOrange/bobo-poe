@@ -171,6 +171,7 @@ Show # Currency - Rare
 Show # Currency - Coin
     Class "Currency"
     BaseType "Silver Coin"
+    SetTextColor 138 43 226 # Prophecy Coin Text
     SetBorderColor 138 43 226 # Prophecy Coin Border
     SetFontSize 38
 
