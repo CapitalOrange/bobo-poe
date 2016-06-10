@@ -240,18 +240,6 @@ Show # Gear - Recipe - Chaos
 Show # Gear - Rares
     Rarity >= Rare
 
-# Section: Leveling
-
-Show # Gear - Levelling - Magic Items
-    ItemLevel <= 25
-    Rarity = Magic
-    SetFontSize 25
-
-Show # Gear - Levelling - White Items
-    ItemLevel <= 15
-    Rarity = Normal
-    SetFontSize 25
-
 # Section: Other
 
 # labyrinth items
@@ -283,6 +271,20 @@ Show # Gear - RGB
     SocketGroup "RGB"
     SetBorderColor 30 144 255 # RGB Border
     SetFontSize 30
+
+# Section: Leveling
+
+Show # Gear - Levelling - White Items
+    ItemLevel <= 15
+    Rarity = Normal
+    SetFontSize 25
+
+Show # Gear - Levelling - Magic Items
+    ItemLevel <= 25
+    Rarity = Magic
+    SetFontSize 25
+
+# Section: Junk
 
 # Show everything else, but in a tiny font.
 Hide # Junk
