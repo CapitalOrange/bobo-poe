@@ -84,21 +84,21 @@ Show # Gear - Uniques
 Show # Gear - Jewels
     Rarity = Normal
     Class "Jewel"
-    SetBorderColor 200 200 200 # Jewel Border
+    SetBorderColor 200 200 200 # Normal Jewel Border
     PlayAlertSound 9 100
 
 # jewels
 Show # Gear - Jewels
     Rarity = Magic
     Class "Jewel"
-    SetBorderColor 136 136 255 # Jewel Border
+    SetBorderColor 136 136 255 # Magic Jewel Border
     PlayAlertSound 9 100
 
 # jewels
 Show # Gear - Jewels
     Rarity = Rare
     Class "Jewel"
-    SetBorderColor 255 255 119 # Jewel Border
+    SetBorderColor 255 255 119 # Rare Jewel Border
     PlayAlertSound 9 100
 
 # show all white maps
@@ -138,12 +138,20 @@ Show # Divination Cards
     PlayAlertSound 7 100
 
 # big money crafting bases
-Show
+Show # Gear - High Bases
     ItemLevel >= 83
     Rarity <= Magic
-    Class "Amulets" "Rings"
-    BaseType "Imbued Wand" "Platinum Kris" "Imperial Skean" "Harbinger Bow" "Sorcerer Boots" "Sorcerer Gloves" "Arcanist Slippers" "Arcanist Gloves" "Hubris Circlet" "Vaal Regalia" "Vaal Axe" "Titanium Spirit Shield" "Jewelled Foil"
-    SetBorderColor 208 32 144
+    SetBorderColor 208 32 144 # Big Money Border
+
+# the trinity and portal gems
+Show # Gems - Rare Gems
+    Class "Support Skill Gems"
+    BaseType "Empower" "Enlighten" "Enhance" "Portal"
+    SetTextColor 0 0 0 # Rare Gem Text
+    SetBackgroundColor 27 162 155 # Rare Gem BG
+    SetBorderColor 0 0 0 # Rare Gem Border
+    SetFontSize 38
+    PlayAlertSound 3 100
 
 # Section: Currency
 
@@ -197,15 +205,6 @@ Show # Currency - Other
 
 # Section: Quality Items/Recipes
 
-Show
-    Class "Support Skill Gems"
-    BaseType "Empower" "Enlighten" "Enhance" "Portal"
-    SetTextColor 0 0 0 # Rare Gem Text
-    SetBackgroundColor 27 162 155 # Rare Gem BG
-    SetBorderColor 0 0 0 # Rare Gem Border
-    SetFontSize 38
-    PlayAlertSound 3 100
-
 # show quality flasks for bauble recipe
 Show # Flasks - Quality
     Quality >= 5
@@ -249,7 +248,7 @@ Show # Gear - Rares
 # Section: Other
 
 # labyrinth items
-Show
+Show # Labyrinth Items
     BaseType "Treasure Key" "Golden Key" "Silver Key" "Bane of the Loyal" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity" "Heart of the Gargoyle" "Cube Of Absorption" "Cogs of Disruption"
     SetTextColor 74 230 58 # Quest Item Text
     SetBorderColor 74 230 58 # Quest Item Border
@@ -298,10 +297,10 @@ Hide # Junk
     SetBorderColor 0 0 0 0 # Junk Border
     SetFontSize 20
 
-# chance bases, edit as needed
-Hide
+# chance bases, edit as needed [change "Hide" to "Show" and above rarity type "BaseType = " followed by your bases in quotation marks]
+Hide # Chance Bases
     Rarity = Normal
-    SetBorderColor 210 0 220
+    SetBorderColor 210 0 220 # Chance Border
 
 # panicBasket
 Show # Error
