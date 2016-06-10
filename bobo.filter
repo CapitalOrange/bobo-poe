@@ -200,6 +200,15 @@ Show # Currency - Other
 
 # Section: Quality Items/Recipes
 
+Show
+    Class "Support Skill Gems"
+    BaseType "Empower" "Enlighten" "Enhance" "Portal"
+    SetTextColor 0 0 0 # Rare Gem Text
+    SetBackgroundColor 27 162 155 # Rare Gem BG
+    SetBorderColor 0 0 0 # Rare Gem Border
+    SetFontSize 38
+    PlayAlertSound 3 100
+
 # show quality flasks for bauble recipe
 Show # Flasks - Quality
     Quality >= 5
