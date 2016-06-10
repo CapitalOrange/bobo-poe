@@ -107,6 +107,7 @@ Show # Gear - Jewels
 Show # Maps - Normal
     Rarity = Normal
     Class "Maps" "Map Fragments"
+    Class "Maps" "Map Fragments" "Labyrinth Map Item"
     SetTextColor 0 0 0 # Normal Map Text
     SetBackgroundColor 200 200 200 # Normal Map BG
     SetBorderColor 0 0 0 # Normal Map Border
