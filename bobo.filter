@@ -68,6 +68,7 @@ Show # Gear - Links - 5L
 Show # Gear - 6S
     Sockets = 6
     SetBorderColor 200 200 200 # 6S Border
+    SetFontSize 35
     PlayAlertSound 4 100
 
 # Section: Generally Good Shit
@@ -84,7 +85,6 @@ Show # Gear - Jewels
     Rarity = Normal
     Class "Jewel"
     SetBorderColor 200 200 200 # Jewel Border
-    SetFontSize 35
     PlayAlertSound 9 100
 
 # jewels
@@ -92,7 +92,6 @@ Show # Gear - Jewels
     Rarity = Magic
     Class "Jewel"
     SetBorderColor 136 136 255 # Jewel Border
-    SetFontSize 35
     PlayAlertSound 9 100
 
 # jewels
@@ -100,13 +99,11 @@ Show # Gear - Jewels
     Rarity = Rare
     Class "Jewel"
     SetBorderColor 255 255 119 # Jewel Border
-    SetFontSize 35
     PlayAlertSound 9 100
 
 # show all white maps
 Show # Maps - Normal
     Rarity = Normal
-    Class "Maps" "Map Fragments"
     Class "Maps" "Map Fragments" "Labyrinth Map Item"
     SetTextColor 0 0 0 # Normal Map Text
     SetBackgroundColor 200 200 200 # Normal Map BG
@@ -116,7 +113,7 @@ Show # Maps - Normal
 # show all magic maps
 Show # Maps - Magic
     Rarity = Magic
-    Class "Maps" "Map Fragments"
+    Class "Maps"
     SetTextColor 0 0 0 # Magic Map Text
     SetBackgroundColor 136 136 255 # Magic Map BG
     SetBorderColor 0 0 0 # Magic Map Border
@@ -125,7 +122,7 @@ Show # Maps - Magic
 # show all rare maps
 Show # Maps - Rare
     Rarity = Rare
-    Class "Maps" "Map Fragments"
+    Class "Maps"
     SetTextColor 0 0 0 # Rare Map Text
     SetBackgroundColor 255 255 119 # Rare Map BG
     SetBorderColor 0 0 0 # Rare Map Border
@@ -260,7 +257,6 @@ Show
 
 # quest items
 Show # Quest Items
-    Class "Quest Items"
     BaseType "Alira's Amulet" "Allflame" "Ammonite Glyph" "Baleful Gem" "Bust of Gaius Sentari" "Bust of Hector Titucius" "Bust of Marceus Lioneye" "Chitus' Plum" "Decanter Spiritus" "Deshret's Banner" "Golden Hand" "Golden Page" "Haliotis Glyph" "Infernal Talc" "Kraityn's Amulet" "Malachai's Entrails" "Malachai's Heart" "Malachai's Lung" "Maligaro's Spike" "Medicine Chest" "Oak's Amulet" "Ribbon Spool" "Roseus Glyph" "Sewer Keys" "Thaumetic Emblem" "Thaumetic Sulphite" "The Apex" "The Eye of Desire" "The Eye of Fury" "Tolman's Bracelet" "Tower Key"
     SetTextColor 74 230 58 # Quest Item Text
     SetBorderColor 74 230 58 # Quest Item Border
